@@ -1,0 +1,34 @@
+{
+  "name": "11ty-startbox",
+  "version": "1.0.0",
+  "description": "An opinionated boilerplate for starting new eleventy sites",
+  "main": "eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svillegascreative/11ty-startbox.git"
+  },
+  "keywords": [
+    "eleventy",
+    "boilerplate"
+  ],
+  "author": "sylvia villegas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svillegascreative/11ty-startbox/issues"
+  },
+  "homepage": "https://github.com/svillegascreative/11ty-startbox#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-shell": "^0.6.5",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1"
+  }
+}
