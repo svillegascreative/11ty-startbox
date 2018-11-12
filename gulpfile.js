@@ -9,6 +9,7 @@ const browserSync = require('browser-sync');
 
 const paths = {
 	siteSrc: 'src/',
+	fileSrc: 'src/**/*.*',
 	styleSrc: 'assets/scss/**/*.scss',
 	scriptSrc: 'assets/js/**/*.js',
 	siteDest: 'site',
@@ -45,7 +46,7 @@ gulp.task('scripts', () => {
 
 gulp.task('generate', shell.task('eleventy'));
 
-gulp.task('browserSync', () => {
+gulp.task('browserSync', (done) => {
   browserSync.init({
     server: {
       baseDir: paths.siteDest
@@ -53,13 +54,13 @@ gulp.task('browserSync', () => {
 		watchEvents: ['change', 'add'],
 		watch: true
 	});
-	
+	done();
 });
 
 gulp.task('watch', () => {
-	gulp.watch(paths.styleSrc, 'styles');
-	gulp.watch(paths.scriptSrc, 'scripts');
-	shell.task('eleventy --watch');
+	gulp.watch(paths.fileSrc, gulp.series('generate'));
+	gulp.watch(paths.styleSrc, gulp.series('styles'));
+	gulp.watch(paths.scriptSrc, gulp.series('scripts'));
 });
 
-gulp.task('default', gulp.series('generate', 'browserSync', 'watch'));
+gulp.task('default', gulp.series('generate', gulp.parallel('browserSync', 'watch')));
