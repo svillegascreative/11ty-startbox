@@ -13,8 +13,8 @@ const paths = {
 	styleSrc: 'assets/scss/**/*.scss',
 	scriptSrc: 'assets/js/**/*.js',
 	siteDest: 'site',
-	styleDest: 'site/css',
-	scriptDest: 'site/js'
+	styleDest: 'site',
+	scriptDest: 'site'
 };
 
 gulp.task('styles', () => {
