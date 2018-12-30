@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/svillegascreative/11ty-startbox#readme",
   "devDependencies": {
-    "@babel/core": "^7.1.5",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
