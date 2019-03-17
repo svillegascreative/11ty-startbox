@@ -1,0 +1,17 @@
+// Hide from visual display only
+// https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+.visually-hidden {
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+
+	a:focus,
+	input:focus,
+	button:focus {
+		position: static;
+		width: auto;
+		height: auto;
+	}
+}

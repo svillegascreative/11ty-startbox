@@ -1,0 +1,12 @@
+/* ------------------
+These are DYNAMIC VARIABLES, defined as CSS custom properties at the root level. These will remain variable within the compiled CSS, and are available to the browser and JavaScript to modify. The values defined here may be reset throughout the CSS as necessary.
+-------------------*/
+
+:root {
+	// typography
+	--font-family: #{$basefont-family};
+	--font-size: 100%;
+	--line-height: #{$ms-up-1};
+	--font-color: #444;
+	--link-color: #{$action-color};
+}

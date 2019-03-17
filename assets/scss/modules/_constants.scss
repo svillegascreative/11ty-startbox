@@ -1,0 +1,40 @@
+/* ------------------
+These are STATIC VARIABLES defined and used within Sass only. They will be compiled to static values in the final stylesheets, and thus should be considered as constants. These values refer mainly to brand or theme definitions that do not change throughout the app or site.
+-------------------*/
+
+// BREAKPOINTS
+$bp-tiny-max: 350px;
+$bp-small-min: $bp-tiny-max + 1px;
+
+$bp-small-max: 500px;
+$bp-med-min: $bp-small-max + 1px;
+
+$bp-med-max: 800px;
+$bp-large-min: $bp-med-max + 1px;
+
+$bp-large-max: 1200px;
+$bp-huge-min: $bp-large-max + 1px;
+
+// MODULAR SCALE
+$ms-base: 1em;
+$ms-ratio: 1.33;
+
+$ms-up-1: $ms-base * $ms-ratio;
+$ms-up-2: $ms-up-1 * $ms-ratio;
+$ms-up-3: $ms-up-2 * $ms-ratio;
+$ms-up-4: $ms-up-3 * $ms-ratio;
+$ms-up-5: $ms-up-4 * $ms-ratio;
+
+$ms-dn-1: $ms-base / $ms-ratio;
+$ms-dn-2: $ms-dn-1 / $ms-ratio;
+$ms-dn-3: $ms-dn-2 / $ms-ratio;
+$ms-dn-4: $ms-dn-3 / $ms-ratio;
+$ms-dn-5: $ms-dn-4 / $ms-ratio;
+
+// COLORS
+$action-color: blue;
+
+// TYPOGRAPHY
+$basefont-family: sans-serif;
+$heading-font-family: serif;
+$codefont-family: monospace;
