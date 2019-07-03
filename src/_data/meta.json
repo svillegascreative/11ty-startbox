@@ -2,9 +2,27 @@
 	"layout": "default",
 
 	"site": {
-		"title": "",
-		"url": "",
-		"description": "",
-		"keywords": []
+		"title": "Start Box - Eleventy Boilerplate",
+		"url": "https://github.com/svillegascreative/11ty-startbox",
+		"description": "A starting point for generating sites with Eleventy"
+	},
+	"og": {
+		"title": "Start Box - Eleventy Boilerplate",
+		"description": "A starting point for generating sites with Eleventy",
+		"image": false,
+		"url": "https://github.com/svillegascreative/11ty-startbox"
+	},
+	"twitter": {
+		"title": "Start Box - Eleventy Boilerplate",
+		"description": "A starting point for generating sites with Eleventy",
+		"image": false,
+		"card": false
+	},
+	"author": {
+		"name": "sylvia villegas",
+		"email": "sylvia@svillegas.com",
+		"twitter": "https://twitter.com/svillegastweets",
+		"instagram": "https://www.instagram.com/zoophoria",
+		"github": "https://www.github.com/svillegascreative"
 	}
 }
