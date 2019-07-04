@@ -12,6 +12,12 @@
 		<meta name="description" content="{{ meta.site.description }}" />
 		{% endif %}
 
+		{% if author %}
+		<meta name="author" content="{{ author }}" />
+		{% elsif meta.site.author %}
+		<meta name="author" content="{{ meta.site.author }}" />
+		{% endif %}
+
 		{% if og-title %}
 		<meta property="og:title" content="{{ og-title }}" />
 		{% elsif title %}			
